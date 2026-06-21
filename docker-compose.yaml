@@ -13,9 +13,6 @@ services:
     restart: unless-stopped
     depends_on:
       - redis
-    env_file:
-      - path: ./api/.env
-        required: true
     volumes:
       - ./api/logs:/app/logs
 
