@@ -1,0 +1,40 @@
+.user-card {
+  width: 100%;
+  max-width: 320px;
+  padding: 20px 24px;
+  border-radius: 15px;
+  border: 1px solid #cbd5e0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(44, 82, 130, 0.12);
+}
+
+.user-card-name {
+  margin: 0 0 16px;
+  font-size: 1.25rem;
+  color: #2c5282;
+}
+
+.user-card-details {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.user-card-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-card-row span {
+  font-size: 1rem;
+  color: #4a5568;
+  word-break: break-word;
+}
+
+.user-card-row .user-card-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #558cbd;
+}

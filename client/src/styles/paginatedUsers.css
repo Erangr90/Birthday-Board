@@ -1,0 +1,47 @@
+.users-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.users-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.users-list-status {
+  margin: 0;
+  text-align: center;
+  color: #4a5568;
+}
+
+.users-list-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.users-list-page-btn {
+  padding: 8px 16px;
+  border-radius: 15px;
+  border: 1px solid #cbd5e0;
+  background-color: #558cbd;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.users-list-page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.users-list-page-info {
+  font-size: 0.875rem;
+  color: #4a5568;
+}

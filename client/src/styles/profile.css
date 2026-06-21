@@ -1,0 +1,59 @@
+.profile-card {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 28px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(44, 82, 130, 0.12);
+}
+
+.profile-form {
+  gap: 24px;
+  width: 100%;
+  align-items: center;
+}
+
+.profile-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 320px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.profile-form input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profile-form .birthdate-select-label {
+  width: auto;
+}
+
+.profile-form .birthdate-fieldset {
+  text-align: center;
+}
+
+.profile-form .birthdate-fieldset legend {
+  margin-bottom: 14px;
+}
+
+.profile-form .birthdate-fields {
+  justify-content: center;
+}
+
+.profile-hint {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: #718096;
+}
+
+.profile-success {
+  margin: 0;
+  text-align: center;
+  color: #2f855a;
+  font-weight: 600;
+}

@@ -1,0 +1,201 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.register-form input {
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+.birthdate-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.birthdate-fieldset legend {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.birthdate-hint {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.birthdate-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.birthdate-select-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.birthdate-select-label select {
+  min-width: 120px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.birthdate-select-label:first-child select {
+  min-width: 100px;
+}
+
+.birthdate-age-preview {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #2f5d8a;
+}
+
+.error-message {
+  color: crimson;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color: #558cbd;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.code-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.code-input {
+  width: 48px;
+  height: 56px;
+  margin-left: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.verify-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.register-page {
+  height: auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+
+.register-form--signup > label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.register-form--signup > label input {
+  margin-left: auto;
+  width: 220px;
+}
+
+
+.register-form--signup > label:nth-of-type(1) input,
+.register-form--signup > label:nth-of-type(2) input {
+  flex: 1;
+  width: auto;
+  margin-left: 12px;
+}
+
+
+.register-form--signup > label .error-message {
+  width: 100%;
+  margin-top: 6px;
+}
+
+
+.register-form--signup > .submit-btn {
+  align-self: center;
+}
+
+
+.login-form > .submit-btn {
+  align-self: center;
+}
+
+
+.login-form > h2 {
+  align-self: center;
+  text-align: center;
+}
+
+.login-form > label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.login-field-label {
+  min-width: 92px;
+}
+
+.login-form > label > input {
+  margin-left: 10px;
+  width: 300px;
+}
+
+.login-form > label .error-message {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.login-register-hint {
+  align-self: center;
+  margin: 0;
+}
+
+.login-register-link {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.register-login-hint {
+  align-self: center;
+  margin: 0;
+}
+
+.register-login-link {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 600;
+}

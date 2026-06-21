@@ -1,0 +1,31 @@
+services:
+  
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    env_file:
+      - path: ./api/.env
+        required: true
+    command: sh -c 'redis-server --requirepass "$$REDIS_PASSWORD"'
+
+  api:
+    image: grady305/b-day-api
+    restart: unless-stopped
+    depends_on:
+      - redis
+    env_file:
+      - path: ./api/.env
+        required: true
+    volumes:
+      - ./api/logs:/app/logs
+
+  
+  client:
+    image: grady305/b-day-client
+    restart: unless-stopped
+    depends_on:
+      - api
+    environment:
+      - VITE_API_PROXY_TARGET=http://api:5000
+    ports:
+      - "5173:5173"

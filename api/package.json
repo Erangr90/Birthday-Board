@@ -1,0 +1,41 @@
+{
+  "name": "node_server",
+  "version": "1.0.0",
+  "description": "Node.js express server",
+  "license": "ISC",
+  "author": "Eran Grady",
+  "type": "commonjs",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "pm2-runtime start ecosystem.config.js",
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/server.ts",
+    "seed": "ts-node src/seed/seedUsers.ts",
+    "seed:generate": "ts-node src/seed/generateUsersFile.ts"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.0.8",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.4",
+    "node-cron": "^4.4.1",
+    "redis": "^5.10.0",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "zod": "^4.3.5"
+  }
+}
