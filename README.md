@@ -11,6 +11,7 @@ date, manage their own profile, and (as admins) manage all users.
 - **Port `5173` must be free** on your machine — it is used by the client (frontend)
   side of the project. Make sure nothing else is using it before starting.
 - Docker and Docker Compose must be installed and running.
+- The App will run on `http://localhost:5173/'
 
 ---
 
@@ -36,6 +37,14 @@ To inspect the data directly, download **MongoDB Compass**
 (https://www.mongodb.com/try/download/compass) and connect using the **connection
 string** that is in the /api/.env file as "MONGO_URI". Paste that connection string into Compass to
 browse the collections.
+
+---
+
+## Admin user
+
+For login as admin:
+- email: admin@birthdayboard.dev
+- password: Admin1234!
 
 ---
 
