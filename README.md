@@ -14,6 +14,8 @@ From the project root, run:
 docker compose up
 ```
 
+---
+
 ## Technologies
 
 **Frontend**
@@ -122,6 +124,6 @@ I am aware that committing the `.env` file into the project is a security issue.
 this intentionally to provide the **simplest possible interaction for running this
 app** — so you can clone and run it without any manual environment setup.
 
----
+
 
 
