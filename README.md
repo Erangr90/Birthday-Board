@@ -6,6 +6,14 @@ date, manage their own profile, and (as admins) manage all users.
 
 ---
 
+## Run the app
+
+From the project root, run:
+
+```bash
+docker compose up
+```
+
 ## Technologies
 
 **Frontend**
@@ -116,10 +124,4 @@ app** — so you can clone and run it without any manual environment setup.
 
 ---
 
-## Run the app
 
-From the project root, run:
-
-```bash
-docker compose up
-```
