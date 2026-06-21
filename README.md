@@ -6,6 +6,20 @@ date, manage their own profile, and (as admins) manage all users.
 
 ---
 
+## Notes before you run
+
+- **Port `5173` must be free** on your machine — it is used by the client (frontend)
+  side of the project. Make sure nothing else is using it before starting.
+- Docker and Docker Compose must be installed and running.
+
+---
+
+## Security note about the `.env` file
+
+I am aware that committing the `.env` file into the project is a security issue. I did
+this intentionally to provide the **simplest possible interaction for running this
+app** — so you can clone and run it without any manual environment setup.
+
 ## Run the app
 
 From the project root, run:
@@ -13,6 +27,15 @@ From the project root, run:
 ```bash
 docker compose up
 ```
+
+---
+
+## Viewing the database
+
+To inspect the data directly, download **MongoDB Compass**
+(https://www.mongodb.com/try/download/compass) and connect using the **connection
+string** that is in the /api/.env file as "MONGO_URI". Paste that connection string into Compass to
+browse the collections.
 
 ---
 
@@ -100,30 +123,4 @@ there to see API, MongoDB, and Redis operations (successes and failures). No pas
 tokens, cookies, or private personal data are written to these logs.
 
 ---
-
-## Viewing the database
-
-To inspect the data directly, download **MongoDB Compass**
-(https://www.mongodb.com/products/tools/compass) and connect using the **connection
-string** that will be provided to you. Paste that connection string into Compass to
-browse the collections.
-
----
-
-## Notes before you run
-
-- **Port `5173` must be free** on your machine — it is used by the client (frontend)
-  side of the project. Make sure nothing else is using it before starting.
-- Docker and Docker Compose must be installed and running.
-
----
-
-## Security note about the `.env` file
-
-I am aware that committing the `.env` file into the project is a security issue. I did
-this intentionally to provide the **simplest possible interaction for running this
-app** — so you can clone and run it without any manual environment setup.
-
-
-
 
